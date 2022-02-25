@@ -19,6 +19,8 @@ function start() {
     socket.onerror = function (error) {
         term.innerText += '\nErreur : ' + error;
     }
+
+    HotSDK._socket = socket;
 }
 
 HotSDK.connect = start;
